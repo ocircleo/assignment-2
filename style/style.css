@@ -422,6 +422,9 @@ header img {
 .fact p {
     z-index: 11;
 }
+.fact img{
+    background-color: transparent;
+}
 
 .fact::after {
     content: '';
@@ -479,6 +482,7 @@ header img {
 }
 
 .our-sponcer-images img {
+    background-color: white;
     margin: 10px;
     filter: grayscale(100%);
 }
