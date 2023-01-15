@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: work-sans;
+    font-family: work-sans,Arial, Helvetica, sans-serif;
 }
 body{
     overflow-x: hidden;
@@ -45,7 +45,7 @@ p {
 .main-button-type {
     text-transform: capitalize;
     color: white;
-    font-family: work-sans;
+    font-family: work-sans,Arial, Helvetica, sans-serif;
     font-weight: 900;
     text-decoration: none;
     font-size: 20px;
@@ -95,7 +95,7 @@ header img {
     text-transform: capitalize;
     font-size: 64px;
     font-weight: 900;
-    font-family: work-sans-bold;
+    font-family: work-sans-bold,Arial, Helvetica, sans-serif;
     padding: 90px 0 10px 0;
 }
 
@@ -108,7 +108,7 @@ header img {
 @media screen and (max-width:768px) {
     .header-title h1 {
         font-size: 54px;
-        font-family: work-sans-bold;
+        font-family: work-sans-bold,Arial, Helvetica, sans-serif;
 
     }
 }
@@ -116,7 +116,7 @@ header img {
 @media screen and (max-width:425px) {
     .header-title h1 {
         font-size: 34px;
-        font-family: work-sans-bold;
+        font-family: work-sans-bold,Arial, Helvetica, sans-serif;
 
     }
 }
@@ -159,7 +159,7 @@ header img {
 .quick-list-of-our-features-title h1 {
     font-size: 45px;
     font-weight: bold;
-    font-family: work-sans-bold;
+    font-family: work-sans-bold,Arial, Helvetica, sans-serif;
     padding: 20px 0;
 }
 
@@ -256,7 +256,7 @@ header img {
 .feature-details h3 {
     font-size: 20px;
     font-weight: bold;
-    font-family: work-sans-bold;
+    font-family: work-sans-bold,Arial, Helvetica, sans-serif;
     padding: 15px;
     text-transform: capitalize;
 }
@@ -291,7 +291,7 @@ header img {
     justify-content: center;
     transition: .3s;
     color: white;
-    font-family: work-sans-bold;
+    font-family: work-sans-bold,Arial, Helvetica, sans-serif;
     font-weight: bold;
     position: absolute;
     z-index: 1;
@@ -384,7 +384,7 @@ header img {
 .some-facts h2 {
     font-size: 45px;
     font-weight: bold;
-    font-family: work-sans-bold;
+    font-family: work-sans-bold,Arial, Helvetica, sans-serif;
 }
 
 .some-facts p {
@@ -490,7 +490,7 @@ header img {
 
 .send-us-an-email h2 {
     font-size: 45px;
-    font-family: work-sans-bold;
+    font-family: work-sans-bold,Arial, Helvetica, sans-serif;
     margin: 30px 20;
     padding: 20px 0 30px 20px;
 }
