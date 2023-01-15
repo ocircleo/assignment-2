@@ -1,0 +1,110 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: work-sans;
+}
+
+@font-face {
+    font-family: "work-sans";
+    src: url(../fonts/WorkSans-Regular.ttf);
+}
+
+@font-face {
+    font-family: "work-sans-bold";
+    src: url(../fonts/WorkSans-Bold.ttf);
+}
+
+:root {
+    --link-color: rgb(255, 144, 14);
+    --bg-color: rgb(255, 244, 231);
+    --text-color: rgb(114, 114, 114);
+    --margin-top: 90px;
+}
+
+.container {
+    width: 100%;
+    height: auto;
+    background-color: var(--bg-color);
+}
+
+.main-button-type {
+    text-transform: capitalize;
+    color: white;
+    font-family: work-sans;
+    font-weight: 900;
+    text-decoration: none;
+    font-size: 20px;
+    background-color: var(--link-color);
+    padding: 20px 25px;
+    margin: 20px 0;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    transition: background-color .3s;
+}
+
+.main-button-type:hover {
+    background-color: var(--text-color);
+}
+
+.main-button-type:active {
+    background-color: var(--link-color);
+}
+
+@media screen and (max-width:768px) {
+    .main-button-type {
+        padding: 15px 20px;
+        font-size: 18px;
+    }
+}
+
+/* ===== End of common class and styles declarations ===== */
+
+header {
+    height: auto;
+    width: 90%;
+    margin: 0 auto;
+    background-color: var(--bg-color);
+}
+
+header img {
+    width: 100%;
+    height: auto;
+    margin: 30px 0;
+}
+
+.header-title {
+    text-align: center;
+}
+
+.header-title h1 {
+    text-transform: capitalize;
+    font-size: 64px;
+    font-weight: 900;
+    font-family: work-sans-bold;
+    padding: 90px 0 10px 0;
+}
+
+.header-title p {
+    font-size: 16px;
+    color: var(--text-color);
+    padding: 20px 0;
+}
+
+@media screen and (max-width:768px) {
+    .header-title h1 {
+        font-size: 54px;
+        font-family: work-sans-bold;
+
+    }
+}
+@media screen and (max-width:425px) {
+    .header-title h1 {
+        font-size: 34px;
+        font-family: work-sans-bold;
+
+    }
+}
+
+/* ===== End of header ======  */
