@@ -4,6 +4,9 @@
     box-sizing: border-box;
     font-family: work-sans;
 }
+body{
+    overflow-x: hidden;
+}
 
 p {
     line-height: 30px;
@@ -71,7 +74,6 @@ p {
 }
 
 /* ===== End of common class and styles declarations ===== */
-
 header {
     height: auto;
     width: 90%;
@@ -414,11 +416,28 @@ header img {
     gap: 10px;
     background-color: white;
     transition: .3s;
+    position: relative;
 }
 
-.fact:hover {
+.fact img,
+.fact h2,
+.fact p {
+    z-index: 11;
+}
+
+.fact::after {
+    content: '';
+    position: absolute;
+    height: 3px;
+    width: 100%;
     background-color: var(--link-color);
-    color: white;
+    bottom: 0;
+    transition: .3s;
+    z-index: 1;
+}
+
+.fact:hover::after {
+    height: 100%;
 }
 
 @media screen and (max-width:1167px) {
@@ -468,12 +487,13 @@ header img {
 
 /* ===== End of our sponcer ====== */
 .send-us-an-email {
-    width: 90%;
+    width: 60%;
     height: auto;
     margin: 0 auto;
     margin-top: var(--margin-top);
 }
-.send-us-an-email h2{
+
+.send-us-an-email h2 {
     font-size: 45px;
     font-family: work-sans-bold;
     margin: 30px 20;
@@ -502,12 +522,21 @@ textarea {
     outline: 4px solid var(--link-color);
     border-radius: 5px;
 }
-.send-email-btn{
+
+.send-email-btn {
     margin: 20px;
 }
-footer{
+
+@media screen and (max-width:768px) {
+    .send-us-an-email {
+        width: 90%;
+    }
+}
+
+/* ======end of send us an email ===== */
+footer {
     width: 90%;
-   
+
     background-color: var(--bg-main-color);
     text-align: center;
     border-radius: 5px;
@@ -518,6 +547,7 @@ footer{
     margin-top: 100px;
     margin-bottom: 150px;
 }
-footer p{
+
+footer p {
     padding: 20px 0;
 }

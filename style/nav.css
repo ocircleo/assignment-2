@@ -1,0 +1,323 @@
+
+#active{
+    font-weight: 700;
+    color: var(--link-color);
+}
+#nav {
+    height: 70px;
+    width: 100%;
+    /* box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.266); */
+    background-color: var(--bg-main-color);
+    position: fixed;
+    z-index: 111;
+    display: flex;
+    
+
+}
+.navigation-animation{
+    animation: nav 1 .3s ease;
+}
+@keyframes nav {
+    0%{
+       transform: translateY(-50%);
+    }
+    100%{
+        transform: translateY(0%);
+    }
+}
+#nav-backup {
+    height: 70px;
+    width: 100%;
+    background-color: var(--bg-main-color);
+}
+
+/* ===== COMPANY LOGO STARTS HARE ====== */
+#company-logo-area {
+    position: fixed;
+    left: 30px;
+    z-index: 111;
+    top: 18px;
+}
+
+#company-logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: black;
+    font-family: work-sans-bold;
+    font-weight: bold;
+}
+#company-logo-title{
+    font-family: work-sans-bold;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+/* #company-logo-img {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    border: 1px solid aliceblue;
+} */
+
+#company-logo-title::first-letter {
+    text-transform: capitalize;
+}
+
+/* ===== COMPANY ends STARTS HARE ====== */
+
+/* =====HAMBERGER MENU STARTS HARE===== */
+/* .hamberger::after{
+    content: '';
+    position: absolute;
+    height: 35px;
+    width: 44px;
+    background-color: antiquewhite;
+    z-index: 23;
+} */
+.hamburger-background{
+    height: 50px;
+    width: 50px;
+    display: block;
+    cursor: pointer;
+    position: fixed;
+    right: 22px;
+    top: 10px;
+    background-color: rgba(248, 245, 245, 0.6);
+    border-radius: 50%;
+    border: 1px solid rgba(225, 225, 225, 0.2);
+}
+#fas {
+    height: 26px;
+    width: 30px;
+    display: block;
+    cursor: pointer;
+    position: fixed;
+    z-index: 111;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    right: 30px;
+    top: 22px;
+    
+    
+
+}
+
+.fs {
+    height: 6px;
+    width: 100%;
+    background-color: black;
+    border-radius: 2px;
+    transition: transform .3s ease-in;
+    transform: translate(0, 0) rotate(0deg);
+   
+}
+
+/* =====FAS ANIMATION CLASS===== */
+.fs-1 {
+    transform: translate(0, 8px) rotate(50deg);
+}
+
+.fs-2 {
+    transform: translate(100px, 0) rotate(0deg);
+ 
+    
+}
+
+.fs-3 {
+    transform: translate(0, -11px) rotate(-50deg);
+}
+
+/* =====FAS ANIMATION ENDS HARE===== */
+/* =====HAMBERGER MENU ENDS HARE===== */
+
+
+.link-container-base {
+    margin-top: 70px;
+    height: 100vh;
+    width: 100%;
+    background-color: aliceblue;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    transform: translateX(100%);
+}
+
+/* =====THIS CLASS WILL BE USED BY JS FOR NAV ↓↓↓===== */
+
+.link-container-base-reapper-animation {
+    transition: transform .3s ease-in;
+}
+
+.link-container-base-reapper {
+    transform: translateX(0%);
+}
+
+/* =====THIS CLASS WILL BE USED BY JS FOR NAV ↑↑↑ ===== */
+
+#link-container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.link-list {
+    list-style: none;
+}
+.link-list a{
+    padding-bottom: 10px;
+}
+
+.link-list::first-letter {
+    text-transform: capitalize;
+}
+
+.link {
+    text-decoration: none;
+    font-family: work-sans-bold;
+    font-weight: bold;
+    color: var(--text-color);
+    position: relative;
+}
+
+.link:hover {
+    color: var(--link-color);
+}
+
+.link:active {
+    color: lightskyblue;
+}
+
+/* =====THESE ARE FOR SUB LINKS===== */
+.sub-link-list{
+    list-style: none;
+    border-bottom: 1px solid rgba(0, 0, 255, 0.1);
+    padding: 10px 0;
+    text-align: center;
+    cursor: pointer;
+    
+    }
+    .sub-link-list:hover{
+        background-color: aliceblue;
+    }
+    .sub-link-list::first-letter{
+        text-transform: capitalize;
+    }
+    .sub-link{
+        text-decoration: none;
+        font-family: capriola;
+        color: rgb(0, 157, 255);
+      
+    }
+    .sub-link:hover{
+        color: lightskyblue;
+    }
+.sub-link-container{
+visibility: hidden;
+height: 0px;
+width: 100%;
+transition: height.4s,visibility .1s .05s;
+pointer-events: none;
+}
+.sub-link-active:hover > .sub-link-container{
+ visibility: visible;
+  height: 130px;
+  pointer-events: auto;
+
+} 
+
+
+
+/* =====START OF EXTRA SMALL SCREEN===== */
+@media screen and (max-width:320px) {
+    #fas {
+        right: 10px;
+    }
+
+    #company-logo-area {
+        left: 10px;
+    }
+}
+
+/* =====END OF EXTRA SMALL SCREEN===== */
+
+/* =====Start OF BIG SCREEN===== */
+@media screen and (min-width:555px) {
+    #nav {
+        align-items: center;
+        justify-content: flex-end;
+    }
+
+    .link-container-base {
+        margin-top: 0;
+        height: auto;
+        width: auto;
+        background-color: transparent;
+        display: block;
+        transform: translateX(0);
+    }
+
+    #link-container {
+        display: flex;
+        gap: 15px;
+        transform: translateX(-40px);
+        flex-direction: row;
+        margin-top: 0;
+    }
+    .sub-link-container{
+        position: absolute;
+        height: 10px;
+        width: 150px;
+        background-color: white;
+        border-radius: 4px;
+        box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.2);
+        visibility: hidden;
+        transform: translate(0,0px);
+        pointer-events: auto;
+        transition: transform .5s, height .1s, visibility .1s;
+        }
+        .sub-link-active:hover > .sub-link-container{
+            visibility: visible;
+            transform: translate(0,10px);
+            pointer-events: auto;
+            height: 130px;
+           
+        } 
+        .sublink-class-for-right-link-container{
+            position: absolute;
+            right: 0;
+            pointer-events: none;
+    
+
+        }
+        .sub-link-active:hover > .sublink-class-for-right-link-container{
+         transform: translate(0,10px);
+         pointer-events: auto;
+         }
+        .sub-link-list{
+        list-style: none;
+        border-bottom: 1px solid rgba(0, 0, 255, 0.1);
+        padding: 10px 0;
+        text-align: center;
+        cursor: pointer;
+        }
+    #fas {
+        display: none;
+    }
+    .hamburger-background{
+        display: none;
+    }
+}
+/* =====START OF SUPER BIG SCREEN===== */
+@media screen and (min-width:1024px) {
+   #link-container{
+    transform: translateX(-100px);
+   }
+   #company-logo-area{
+       left: 100px;
+   }
+}
+
+/* =====END OF NAVIGATION BAR===== */

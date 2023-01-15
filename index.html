@@ -6,13 +6,59 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Assignment-2</title>
+    <link rel="stylesheet" href="style/nav.css">
     <link rel="stylesheet" href="style/style.css">
 </head>
 
 <body>
     <div class="container bg-main">
+           <!-- -===== START OF NAVIGATION MENU =====- -->
+    <nav id="nav" class="navigation-animation">
+       
+        <div id="fas" onclick="navFunctioin()">
+          <div class="fs"></div>
+          <div class="fs"></div>
+          <div class="fs"></div>
+        </div>
+        <div id="company-logo-area">
+          <a href="#" id="company-logo">
+            <!-- <img src="logo.png" alt="company-logo" id="company-logo-img" /> -->
+            <h2 id="company-logo-title">g3 architect </h2>
+          </a>
+        </div>
+        <div class="link-container-base">
+          <ul id="link-container">
+            <li class="link-list">
+              <a href="#" class="link" id="active"  onclick="navCloseFunction()">home</a>
+            </li>
+            <!-- =====Nested links===== -->
+            <!-- <li class="link-list nav-active sub-link-active" id="">
+              <a href="#" class="link">more</a>
+              <ul class="sub-link-container">
+                <li class="sub-link-list"><a href="#" class="sub-link"onclick="navCloseFunction()">all about us </a></li>
+                <li class="sub-link-list"><a href="#" class="sub-link"onclick="navCloseFunction()">our works </a></li>
+                <li class="sub-link-list"><a href="#" class="sub-link"onclick="navCloseFunction()">what we offer </a></li>
+              </ul>
+            </li> -->
+            <!-- =====Nested links===== -->
+            <li class="link-list">
+              <a href="#" class="link" onclick="navCloseFunction()">about</a>
+            </li>
+            <li class="link-list">
+              <a href="#" class="link" onclick="navCloseFunction()">contact</a>
+            </li>
+            <li class="link-list">
+                <a href="#" class="link" id=""  onclick="navCloseFunction()">log in</a>
+              </li>
+           
+          </ul>
+        </div>
+    </nav>
+      <div id="nav-backup"></div>
+      <!-- -===== END OF NAVIGATION MENU ===== -->
+
+        <!-- =======only nav ======= -->
         <header>
-            <nav></nav>
             <div class="header-title">
                 <h1>brand new <br> group of architects</h1>
                 <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered
@@ -138,28 +184,29 @@
                 the majority have suffered alteration.</p>
             <div class="our-sponcer-images">
                 <img src="images/sponsors/spotify.png" alt="">
-            <img src="images/sponsors/amazon.png" alt="">
-            <img src="images/sponsors/google.png" alt="">
-            <img src="images/sponsors/telerama.png" alt="">
+                <img src="images/sponsors/amazon.png" alt="">
+                <img src="images/sponsors/google.png" alt="">
+                <img src="images/sponsors/telerama.png" alt="">
             </div>
-            
+
         </section>
     </div>
-<!-- ====== End of our sponcer ====== -->
-<div class="container" style="background-color: var(--bg-main-color);">
-    <section class="send-us-an-email">
-        <h2>Send us an Email</h2>
-<form>
-    <input type="email" name="email" id="email" placeholder="Your Email">
-    <textarea name="text" id="text" cols="30" rows="10" placeholder="Your text"></textarea>
-</form>
-<button href="#" class="main-button-type send-email-btn">send</button>
-</section>
-</div>
-<!-- ===== End of send us an email ====== -->
-<footer>
-    <p>All rights reserved copyright@2023 startup landing page design</p>
-</footer>
+    <!-- ====== End of our sponcer ====== -->
+    <div class="container" style="background-color: var(--bg-main-color);">
+        <section class="send-us-an-email">
+            <h2>Send us an Email</h2>
+            <form>
+                <input type="email" name="email" id="email" placeholder="Your Email">
+                <textarea name="text" id="text" cols="30" rows="10" placeholder="Your text"></textarea>
+            </form>
+            <button href="#" class="main-button-type send-email-btn">send</button>
+        </section>
+    </div>
+    <!-- ===== End of send us an email ====== -->
+    <footer>
+        <p>All rights reserved copyright@2023 startup landing page design</p>
+    </footer>
+    <script src="js/nav.js"></script>
 </body>
 
 </html>
