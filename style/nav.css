@@ -67,14 +67,6 @@
 /* ===== COMPANY ends STARTS HARE ====== */
 
 /* =====HAMBERGER MENU STARTS HARE===== */
-/* .hamberger::after{
-    content: '';
-    position: absolute;
-    height: 35px;
-    width: 44px;
-    background-color: antiquewhite;
-    z-index: 23;
-} */
 .hamburger-background{
     height: 50px;
     width: 50px;

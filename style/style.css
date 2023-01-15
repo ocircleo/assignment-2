@@ -299,11 +299,6 @@ header img {
     left: -50px;
 
 }
-
-.special-main-button-button:hover {
-    background-color: var(--text-color);
-}
-
 @media (min-width:1025px) and (max-width:1250px) {
     .features-you-will-love {
         grid-template-rows: repeat(4, 1fr);
